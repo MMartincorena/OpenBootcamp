@@ -14,11 +14,15 @@ Crea un archivo JS que contenga las siguientes líneas
 
 const nombre = "Martin";
 const apellido = "Martincorena";
-const estudiante = `Martin ${apellido}`;
+const estudiante = "Martin" + " " + "Martincorena";
 const estudianteMayus = estudiante.toUpperCase();
 const estudianteMinus = estudiante.toLowerCase();
 const numLetras = estudiante.length;
+const primerMayuscula = estudiante.charAt(0);
+const ultimaMayuscula = apellido.charAt(apellido.length-1);
 
+const estudianteSinEspacios = estudiante.split(" ").join("");
 
+const encontrado = estudiante.includes(nombre);
 
-console.log(estudiante);
+console.log(encontrado);
