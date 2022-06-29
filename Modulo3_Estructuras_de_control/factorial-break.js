@@ -1,5 +1,5 @@
-var num = 1;
-var i = 0;
+let num = 1;
+let i = 0;
 
 while (i < 15) {
   i++;
