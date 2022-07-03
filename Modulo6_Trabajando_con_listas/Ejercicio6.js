@@ -21,23 +21,30 @@ Peliculas = [
   {
     titulo: "Last Evolution",
     director: "Kakashi",
-    fecha: new Date("20-3-1999"),
+    fecha: new Date("3/20/1999"),
   },
   {
     titulo: "El guerrero legendario",
     director: "Ahashi",
-    fecha: new Date("22-8-2022"),
+    fecha: new Date("8/22/2022"),
   },
   {
     titulo: "El 6to Hokage",
     director: "Akira",
-    fecha: new Date("5-2-2020"),
+    fecha: new Date("2/5/2020"),
   },
 ];
 
-const Post = Peliculas.filter((x) => {
-  x.fecha > new Date("01-01-2010");
-});
+// - Una nueva lista que contenga las películas posteriores al 1 de enero de 2010 (utilizando filter)
+
+const fechaAComparar = new Date("1/1/2010")
+
+const Post = Peliculas.filter( (pelicula) => 
+  pelicula.fecha.getTime() > fechaAComparar.getTime()
+);
+
+console.log(Post);
+
 
 const listaDirectores = Peliculas.map((x) => x.director);
 const listaTitulos = Peliculas.map((x) => x.titulo);
@@ -45,4 +52,5 @@ const listaTitulos = Peliculas.map((x) => x.titulo);
 const DirectTitulo = listaDirectores.concat(listaTitulos);
 const DirectTitulo2 = [...listaDirectores, ...listaTitulos];
 
-console.log(Post);
+// pop() , push(), filter(), map()
+
