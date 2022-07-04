@@ -1,0 +1,22 @@
+{
+  "name": "openbootcamp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MMartincorena/OpenBootcamp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MMartincorena/OpenBootcamp/issues"
+  },
+  "homepage": "https://github.com/MMartincorena/OpenBootcamp#readme",
+  "dependencies": {
+    "winston": "^3.8.1"
+  }
+}
