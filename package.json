@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "http-server ." 
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   "homepage": "https://github.com/MMartincorena/OpenBootcamp#readme",
   "dependencies": {
     "chalk": "^5.0.1",
+    "http-server": "^14.1.1",
     "winston": "^3.8.1"
   }
 }
